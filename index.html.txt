@@ -191,7 +191,7 @@ footer {
   </p>
 </section>
 
-
+<!-- Вбудована мапа StoryMapJS -->
 <section class="map-wrapper">
   <div class="map-frame">
     <iframe
