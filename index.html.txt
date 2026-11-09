@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Місця Петра Франка</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f4f0;
+  color: #292925;
+  font-family: Georgia, serif;
+}
+
+/* Верхня частина сторінки */
+header {
+  padding: 35px 6%;
+  border-bottom: 1px solid #dedbd3;
+}
+
+.label {
+  font: 11px Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #77736b;
+}
+
+h1 {
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: normal;
+  margin: 22px 0 12px;
+}
+
+.intro {
+  max-width: 700px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #625e56;
+}
+
+/* Вступна фотографія */
+.hero {
+  padding: 35px 6%;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 10px;
+  font: 12px Arial, sans-serif;
+  color: #77736b;
+}
+
+/* Текст перед мапою */
+.section-intro {
+  padding: 20px 6% 30px;
+}
+
+.section-intro h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.section-intro p {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #625e56;
+}
+
+/* Область StoryMapJS */
+.map-wrapper {
+  padding: 0 3% 45px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 78vh;
+  min-height: 600px;
+  border: 1px solid #dedbd3;
+  background: white;
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Джерела */
+.sources {
+  padding: 35px 6%;
+  border-top: 1px solid #dedbd3;
+}
+
+.sources h2 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.sources p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #625e56;
+}
+
+/* Нижня частина */
+footer {
+  padding: 25px 6%;
+  background: #e9e6df;
+  font: 12px Arial, sans-serif;
+  color: #625e56;
+}
+
+/* Мобільна версія */
+@media (max-width: 700px) {
+  header {
+    padding: 25px 22px;
+  }
+
+  .hero {
+    padding: 22px;
+  }
+
+  .section-intro {
+    padding: 20px 22px;
+  }
+
+  .map-wrapper {
+    padding: 0 10px 30px;
+  }
+
+  .map-frame {
+    height: 70vh;
+    min-height: 450px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="label">
+    Освітній проєкт · Міська історія
+  </div>
+
+  <h1>Місця Петра Франка</h1>
+
+  <p class="intro">
+    Географія життя, діяльності та пам'яті
+    українського педагога, науковця, авіатора
+    та громадського діяча.
+  </p>
+</header>
+
+<section class="hero">
+  <img
+    src="URL_ВАШОЇ_ФОТОГРАФІЇ"
+    alt="Петро Франко">
+
+  <div class="caption">
+    Петро Франко (1890–1941). Архівне зображення.
+  </div>
+</section>
+
+<section class="section-intro">
+  <h2>Досліджуйте біографію на мапі</h2>
+
+  <p>
+    Мандруйте місцями, пов'язаними з життям
+    Петра Франка. Відкривайте історії,
+    фотографії та архівні документи.
+  </p>
+</section>
+
+
+<section class="map-wrapper">
+  <div class="map-frame">
+    <iframe
+      src="https://uploads.knightlab.com/storymapjs/1317f3c6b247deddcb513a103b21ee94/petro-franko-1/index.html"
+      title="Інтерактивна мапа місць Петра Франка"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<section class="sources">
+  <h2>Про проєкт і джерела</h2>
+
+  <p>
+    Освітній проєкт про географію життя
+    та діяльності Петра Франка.
+  </p>
+
+  <p>
+    Архівні матеріали, фотографії та документи.
+  </p>
+</section>
+
+<footer>
+  Освітній проєкт · Центр міської історії
+</footer>
+
+</body>
+</html>
