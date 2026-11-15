@@ -1,250 +1,216 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Місця Петра Франка</title>
 
-<title>Місця Петра Франка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
-* {
-  box-sizing: border-box;
-}
+    body {
+      margin: 0;
+      background: #f5f4f0;
+      color: #292929;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-body {
-  margin: 0;
-  background: #f5f4f0;
-  color: #292925;
-  font-family: Georgia, serif;
-}
+    /* Загальна ширина сторінки */
+    header,
+    .hero,
+    .section-intro,
+    .map-wrapper,
+    .sources,
+    footer {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
 
-/* Верхня частина сторінки */
-  .logo {
-.logo {
-  display: block;
-  width: 320px;
-  max-width: 100%;
-  max-height: 110px;
-  object-fit: contain;
-  object-position: left center;
-  margin-bottom: 28px;
-}
+    /* Верхня частина */
+    header {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid #d8d6d0;
+    }
 
-.logo {
-  display: block;
-  max-width: 220px;
-  max-height: 75px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 28px;
-}
-header {
-  padding: 35px 24px;
-  border-bottom: 1px solid #dedbd3;
-}
+    .logo {
+      display: block;
+      width: 260px;
+      max-width: 100%;
+      max-height: 90px;
+      object-fit: contain;
+      object-position: left center;
+      margin-bottom: 25px;
+    }
 
-.label {
-  font: 11px Arial, sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #77736b;
-}
+    .label {
+      margin-bottom: 12px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #77746d;
+    }
 
-h1 {
-  font-size: clamp(36px, 5vw, 62px);
-  font-weight: normal;
-  margin: 22px 0 12px;
-}
+    h1 {
+      margin: 0 0 15px;
+      font-size: 48px;
+      line-height: 1.15;
+      font-weight: 500;
+    }
 
-.intro {
-  max-width: 700px;
-  font-size: 19px;
-  line-height: 1.6;
-  color: #625e56;
-}
+    .intro {
+      max-width: 760px;
+      margin: 0;
+      font-size: 19px;
+      color: #55534e;
+    }
 
-/* Вступна фотографія */
-.hero {
-  padding: 35px 24px;
-}
+    /* Фотографія */
+    .hero {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      text-align: center;
+    }
 
-.hero img {
-  display: block;
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  object-position: center 18%;
-}
+    .hero img {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      object-position: center;
+      margin: 0 auto;
+    }
 
-.caption {
-  margin-top: 10px;
-  font: 12px Arial, sans-serif;
-  color: #77736b;
-}
+    .caption {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #77746d;
+      text-align: left;
+    }
 
-/* Текст перед мапою */
-.section-intro {
-  padding: 20px 24px 30px;
-}
+    /* Вступ до мапи */
+    .section-intro {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-top: 1px solid #d8d6d0;
+    }
 
-.section-intro h2 {
-  font-size: 28px;
-  font-weight: normal;
-}
+    h2 {
+      margin: 0 0 12px;
+      font-size: 27px;
+      font-weight: 500;
+    }
 
-.section-intro p {
-  max-width: 700px;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #625e56;
-}
+    .section-intro p,
+    .sources p {
+      max-width: 850px;
+      margin: 0;
+      color: #55534e;
+    }
 
-/* Область StoryMapJS */
-.map-wrapper {
-  padding: 0 24px 45px;
-}
+    /* StoryMap */
+    .map-wrapper {
+      padding-top: 10px;
+      padding-bottom: 50px;
+    }
 
-.map-frame {
-    width: 100%;
-    height: 85vh;
-    min-height: 700px;
-    border: 1px solid #dedbd3;
-    background: white;
-}
+    .map-frame {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #d8d6d0;
+      background: #fff;
+    }
 
-.map-frame iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-}
-    
-/* Джерела */
-.sources {
-  padding: 35px 24px;
-  border-top: 1px solid #dedbd3;
-}
+    .map-frame iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
-.sources h2 {
-  font-size: 23px;
-  font-weight: normal;
-}
+    /* Джерела */
+    .sources {
+      padding-top: 35px;
+      padding-bottom: 40px;
+      border-top: 1px solid #d8d6d0;
+    }
 
-.sources p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #625e56;
-}
+    .sources p + p {
+      margin-top: 10px;
+    }
 
-/* Нижня частина */
-footer {
-  padding: 25px 24px;
-  background: #e9e6df;
-  font: 12px Arial, sans-serif;
-  color: #625e56;
-}
-
-/* Мобільна версія */
-@media (max-width: 700px) {
-  header {
-    padding: 25px 22px;
-  }
-
-  .hero {
-    padding: 22px;
-  }
-
-  .section-intro {
-    padding: 20px 22px;
-  }
-
-  .map-wrapper {
-    padding: 0 10px 30px;
-  }
-
-  .map-frame {
-    height: 70vh;
-    min-height: 450px;
-  }
-
-  h1 {
-    font-size: 38px;
-  }
-}
-</style>
+    /* Нижня частина */
+    footer {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-top: 1px solid #d8d6d0;
+      font-size: 13px;
+      color: #77746d;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <header>
+    <img
+      src="ldfk.png"
+      alt="Львівський державний університет фізичної культури імені Івана Боберського"
+      class="logo"
+    >
 
-<img
-  src="ldfk.png"
-  alt="Львівський державний університет фізичної культури імені Івана Боберського"
-  class="logo">
+    <div class="label">
+      Освітній проєкт · Історія української тіловиховної культури
+    </div>
 
-  <div class="label">
-    Освітній проєкт · Історія української тіловиховної культури
-  </div>
+    <h1>Місця Петра Франка</h1>
 
-  <h1>Місця Петра Франка</h1>
+    <p class="intro">
+      Географія життя, діяльності та пам'яті українського педагога,
+      науковця, авіатора та громадського діяча.
+    </p>
+  </header>
 
-  <p class="intro">
-    Географія життя, діяльності та пам'яті
-    українського педагога, науковця, авіатора
-    та громадського діяча.
-  </p>
-</header>
+  <section class="hero">
+    <img src="petroF_portrait.png" alt="Петро Франко">
+    <div class="caption">Фотографії, ЦДІАЛ.</div>
+  </section>
 
-<section class="hero">
-  <img
-    src="petroF_portrait.png"
-    alt="Петро Франко">
+  <section class="section-intro">
+    <h2>Досліджуйте біографію на мапі</h2>
+    <p>
+      Мандруйте місцями, пов'язаними з життям Петра Франка.
+      Відкривайте історії, фотографії та архівні документи.
+    </p>
+  </section>
 
-  <div class="caption">
-    Фотографії, ЦДІАЛ.
-  </div>
-</section>
+  <section class="map-wrapper">
+    <div class="map-frame">
+      <iframe
+        src="https://uploads.knightlab.com/storymapjs/1317f3c6b247deddcb513a103b21ee94/petro-franko-1/index.html"
+        title="Інтерактивна мапа місць Петра Франка"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
 
-<section class="section-intro">
-  <h2>Досліджуйте біографію на мапі</h2>
+  <section class="sources">
+    <h2>Про проєкт і джерела</h2>
+    <p>
+      Освітній проєкт про географію життя та діяльності Петра Франка.
+    </p>
+    <p>
+      Архівні матеріали, фотографії та документи.
+    </p>
+  </section>
 
-  <p>
-    Мандруйте місцями, пов'язаними з життям
-    Петра Франка. Відкривайте історії,
-    фотографії та архівні документи.
-  </p>
-</section>
-
-<!-- Вбудована мапа StoryMapJS -->
-<section class="map-wrapper">
-  <div class="map-frame">
-    <iframe
-      src="https://uploads.knightlab.com/storymapjs/1317f3c6b247deddcb513a103b21ee94/petro-franko-1/index.html"
-      title="Інтерактивна мапа місць Петра Франка"
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-
-<section class="sources">
-  <h2>Про проєкт і джерела</h2>
-
-  <p>
-    Освітній проєкт про географію життя
-    та діяльності Петра Франка.
-  </p>
-
-  <p>
-    Архівні матеріали, фотографії та документи.
-  </p>
-</section>
-
-<footer>
-  Освітній проєкт · Львіський державний університет фізичної культури
-</footer>
+  <footer>
+    Освітній проєкт · Львівський державний університет фізичної культури
+  </footer>
 
 </body>
 </html>
